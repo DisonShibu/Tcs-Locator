@@ -1,0 +1,4 @@
+#Wed Sep 18 01:45:22 IST 2024
+base.0=E\:\\XboxGames\\Tcs-Locator\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

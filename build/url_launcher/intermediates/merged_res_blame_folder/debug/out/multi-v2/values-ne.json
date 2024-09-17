@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\values-ne\\values-ne.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\res\\merged\\debug\\values-ne\\values-ne.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\values-ne\\values-ne.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

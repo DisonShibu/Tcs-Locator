@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "E:\\XboxGames\\Tcs-Locator\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\dison\\.gradle\\caches\\transforms-3\\d24c74b387311945a42c7099767df6ba\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    }
+]
