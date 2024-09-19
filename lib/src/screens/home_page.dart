@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                                 return ListTile(
                                   leading: CircleAvatar(
                                     backgroundColor: Colors.white,
-                                    child: Text(index.toString()),
+                                    child: Icon(Icons.location_city,color: Colors.grey,),
                                   ),
                                   title: Text(locationList[index].area),
                                   subtitle: Text(locationList[index].location),

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:app_template/src/screens/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({ Key key }) : super(key: key);
@@ -62,6 +63,10 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.black,
+      statusBarBrightness: Brightness.dark,
+    ));
     return Scaffold(
       backgroundColor: Colors.white,
       body:Center(
@@ -69,7 +74,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 200),
-          child: Image.asset("assets/images/splash_image.png",
+          child: Image.asset("assets/images/splash_image.jfif",
           alignment: Alignment.center,
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:app_template/src/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-enum SearchPlaces { NorthAmerica, India, London, Germany, clear }
+enum SearchPlaces {NorthAmerica,India,Europe,LatinAmerica,clear,UKIreland,Asiapacific,AustraliaNewzland}
 
 class BottomSheetWidget extends StatefulWidget {
   final ValueChanged onValueChanged;
@@ -17,7 +17,8 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
   SearchPlaces _character = SearchPlaces.NorthAmerica;
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
+      
       children: [
         RadioListTile<SearchPlaces>(
           title: const Text('North America'),
@@ -26,7 +27,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
           onChanged: (SearchPlaces value) {
             _character = value;
             setState(() {});
-            widget.onValueChanged(_character);
+            widget.onValueChanged("North America");
           },
         ),
         RadioListTile<SearchPlaces>(
@@ -41,34 +42,72 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
           },
         ),
         RadioListTile<SearchPlaces>(
-          title: const Text('London'),
-          value: SearchPlaces.London,
+          title: const Text('Europe'),
+          value: SearchPlaces.Europe,
           groupValue: _character,
           onChanged: (SearchPlaces value) {
             setState(() {
               _character = value;
             });
-            widget.onValueChanged(_character.name);
+            widget.onValueChanged("Europe");
           },
         ),
         RadioListTile<SearchPlaces>(
-          title: const Text('Germany'),
-          value: SearchPlaces.Germany,
+          title: const Text('Latin America'),
+          value: SearchPlaces.LatinAmerica,
           groupValue: _character,
           onChanged: (SearchPlaces value) {
             setState(() {
               _character = value;
             });
-            widget.onValueChanged(_character.name);
+            widget.onValueChanged("Latin America");
+          },
+        ),
+        RadioListTile<SearchPlaces>(
+          title: const Text('UK & Ireland'),
+          value: SearchPlaces.UKIreland,
+          groupValue: _character,
+          onChanged: (SearchPlaces value) {
+            setState(() {
+              _character = value;
+            });
+            widget.onValueChanged("Latin America");
+          },
+        ),
+
+         RadioListTile<SearchPlaces>(
+          title: const Text('Asia Pacific'),
+          value: SearchPlaces.Asiapacific,
+          groupValue: _character,
+          onChanged: (SearchPlaces value) {
+            setState(() {
+              _character = value;
+            });
+            widget.onValueChanged("Asia Pacific");
+          },
+        ),
+         RadioListTile<SearchPlaces>(
+          title: const Text('Australia & Newzland'),
+          value: SearchPlaces.AustraliaNewzland,
+          groupValue: _character,
+          onChanged: (SearchPlaces value) {
+            setState(() {
+              _character = value;
+            });
+            widget.onValueChanged("Australia & Newzland");
           },
         ),
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            primary: Colors.grey,
+
+          ),
           onPressed: () {
             _character = SearchPlaces.clear;
             widget.onValueChanged(_character.name);
             pop(widget.sheetContext);
           },
-          child: Text('Clear'),
+          child: Text('Clear',style: TextStyle(color: Colors.black),),
         )
       ],
     );

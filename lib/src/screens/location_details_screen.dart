@@ -22,7 +22,9 @@ class _LocationDetailsScrrenState extends State<LocationDetailsScrren> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(screenHeight(context, dividedBy: 10)),
         child: CommonAppBar(
+          isLeadingIcon: true,
           searchTextEditingController: textEditingController,
+          
         ),
       ),
       body: Column(
